@@ -30,7 +30,8 @@ import { CineFavourite } from './cine-favourites/entities/cine-favourite.entity'
       username: "test_8q3z_user",
       password: "0pZwJMREZ5wNHMhlGToWYNT7yKsxvpQg",
       database: "test_8q3z",
-      ssl: { rejectUnauthorized: false },
+      ssl: true,
+      extra:{ rejectUnauthorized: false },
       synchronize: true,
       bigNumberStrings: true,
       entities: [ShopCart, ShopUser, CineUser, CineFavourite]
